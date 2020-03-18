@@ -28,9 +28,13 @@ export class AppComponent implements OnInit {
     const {instance} = this.inputContainer.createComponent(factory, null,
       this.injector);
 
+    console.info('asdfas');
+    console.info(instance);
+
     instance['value'] = 'My First text';
     instance['readonly'] = false;
     instance['disabled'] =  false;
+
   }
 
 }
